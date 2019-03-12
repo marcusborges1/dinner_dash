@@ -1,0 +1,10 @@
+Metrics/LineLength:
+  Max: 120
+
+Style/MixinUsage:
+  Exclude:
+    - bin/setup
+    - bin/update
+
+Style/Documentation:
+  Enabled: false

@@ -2,9 +2,10 @@
 
 <h1>Items</h1>
 
-<table>
-  <thead>
+<table class="table-responsive">
+  <thead class="thead-dark">
     <tr>
+      <th>Photo</th>
       <th>Name</th>
       <th>Description</th>
       <th>Price</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
+        <td><%= image_tag url_for(item.photo), width: '300px' %></td>
         <td><%= item.name %></td>
         <td><%= item.description %></td>
         <td><%= item.price %></td>

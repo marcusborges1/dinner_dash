@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag url_for(@item.photo) %> </br>
+  <%= link_to @item.photo.filename, rails_blob_path(@item.photo, disposition: "attachment") %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @item.name %>
 </p>

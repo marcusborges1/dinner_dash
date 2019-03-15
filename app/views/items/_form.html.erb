@@ -17,6 +17,12 @@
   </div>
 
   <div class="field">
+    <%= form.label :photo %> </br>
+    <%= image_tag url_for(@item.photo) %> </br>
+    <%= form.file_field :photo %>
+  </div>
+
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description %>
   </div>
